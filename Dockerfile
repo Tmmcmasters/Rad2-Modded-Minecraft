@@ -1,5 +1,5 @@
 # Use the itzg/minecraft-server image with Java 8
-FROM itzg/minecraft-server:java8
+FROM itzg/minecraft-server
 
 # Set environment variables for the Minecraft server
 ENV TYPE=AUTO_CURSEFORGE
