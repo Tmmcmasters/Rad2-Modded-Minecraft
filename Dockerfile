@@ -2,7 +2,7 @@
 FROM itzg/minecraft-server:java8
 
 # Set environment variables for the Minecraft server
-ENV TYPE=FORGE
+ENV TYPE=CURSEFORGE
 ENV VERSION=1.16.5
 ENV FORGE_VERSION=36.2.39
 ENV MEMORY=12G
