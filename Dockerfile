@@ -4,15 +4,17 @@ FROM openjdk:8-jre
 # Set working directory
 WORKDIR /data
 
-# Copy all server files into the container
-COPY . .
+# Copy server files to a temporary directory
+COPY . /tmp/data
 
-# Ensure LaunchServer.sh is executable
-RUN chmod +x LaunchServer.sh
-
-# Set file permissions to allow the server to write to /data
-RUN chown -R 1000:1000 /data && \
-    chmod -R 755 /data
+# Create an entrypoint script to copy files to /data if it's empty
+RUN echo '#!/bin/sh' > /entrypoint.sh && \
+    echo 'if [ -z "$(ls -A /data)" ]; then cp -r /tmp/data/* /data; fi' >> /entrypoint.sh && \
+    echo 'chmod +x /data/LaunchServer.sh' >> /entrypoint.sh && \
+    echo 'chown -R 1000:1000 /data' >> /entrypoint.sh && \
+    echo 'chmod -R 755 /data' >> /entrypoint.sh && \
+    echo 'exec /data/LaunchServer.sh' >> /entrypoint.sh && \
+    chmod +x /entrypoint.sh
 
 # Switch to a non-root user for security (uid 1000)
 USER 1000:1000
@@ -20,5 +22,5 @@ USER 1000:1000
 # Expose the Minecraft server port
 EXPOSE 25565
 
-# Run LaunchServer.sh to start the server
-CMD ["./LaunchServer.sh"]
+# Use the entrypoint script to start the server
+ENTRYPOINT ["/entrypoint.sh"]
