@@ -1,25 +1,24 @@
-# Use the default itzg/minecraft-server image
-FROM itzg/minecraft-server
+# Use a Java 8 base image for Minecraft 1.16.5 and Forge 36.2.39
+FROM openjdk:8-jre
 
-# Set environment variables for the Minecraft server
-ENV TYPE=AUTO_CURSEFORGE
-ENV CF_PAGE_URL=https://www.curseforge.com/minecraft/modpacks/roguelike-adventures-and-dungeons-2
-ENV JAVA_VERSION=8
-ENV MEMORY=12G
-ENV EULA=TRUE
-ENV ENABLE_WHITELIST=False
-ENV ENFORCE_SECURE_PROFILE=FALSE
-ENV PORT=25565
-ENV JVM_OPTS="-XX:+PrintGCDetails -XX:+PrintGCDateStamps -Xloggc:/data/gc.log"
+# Set working directory
+WORKDIR /data
 
-# Use an entrypoint script to ensure /data permissions are correct
-# RUN echo '#!/bin/sh' > /entrypoint.sh && \
-#     echo 'chown -R 1000:1000 /data' >> /entrypoint.sh && \
-#     echo 'exec /start' >> /entrypoint.sh && \
-#     chmod +x /entrypoint.sh
+# Copy all server files into the container
+COPY . .
 
-# ENTRYPOINT ["/entrypoint.sh"]
+# Ensure launchserver.sh is executable
+RUN chmod +x launchserver.sh
 
-# Expose the Minecraft server port and VoiceChat port (optional)
+# Set file permissions to allow the server to write to /data
+RUN chown -R 1000:1000 /data && \
+    chmod -R 755 /data
+
+# Switch to a non-root user for security (uid 1000)
+USER 1000:1000
+
+# Expose the Minecraft server port
 EXPOSE 25565
-EXPOSE 24454
+
+# Run launchserver.sh to start the server
+CMD ["./launchserver.sh"]
