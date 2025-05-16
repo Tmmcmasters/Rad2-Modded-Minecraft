@@ -10,8 +10,11 @@ ENV EULA=TRUE
 # ENV ENABLE_WHITELIST=TRUE
 ENV MEMORY=16G
 
+# Set the working directory to /data
+WORKDIR /data
 
-ENTRYPOINT ["/LaunchServer.sh"]
+# Use the correct path for the script
+ENTRYPOINT ["/data/LaunchServer.sh"]
 
 EXPOSE 25565
 
