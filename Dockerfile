@@ -7,12 +7,14 @@ WORKDIR /data
 # Copy server files to a temporary directory
 COPY . /tmp/data
 
+# Set permissions on /tmp/data during build
+RUN chown -R 1000:1000 /tmp/data && \
+    chmod -R 755 /tmp/data && \
+    chmod +x /tmp/data/LaunchServer.sh
+
 # Create an entrypoint script to copy files to /data if it's empty
 RUN echo '#!/bin/sh' > /entrypoint.sh && \
-    echo 'if [ -z "$(ls -A /data)" ]; then cp -r /tmp/data/* /data; fi' >> /entrypoint.sh && \
-    echo 'chmod +x /data/LaunchServer.sh' >> /entrypoint.sh && \
-    echo 'chown -R 1000:1000 /data' >> /entrypoint.sh && \
-    echo 'chmod -R 755 /data' >> /entrypoint.sh && \
+    echo 'if [ -z "$(ls -A /data)" ] || [ "$(ls -A /data)" = "lost+found" ]; then cp -r /tmp/data/* /data; fi' >> /entrypoint.sh && \
     echo 'exec /data/LaunchServer.sh' >> /entrypoint.sh && \
     chmod +x /entrypoint.sh
 
