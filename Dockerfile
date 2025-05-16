@@ -1,12 +1,13 @@
-# Use the itzg/minecraft-server image with Java 8
+# Use the default itzg/minecraft-server image
 FROM itzg/minecraft-server
 
 # Set environment variables for the Minecraft server
 ENV TYPE=AUTO_CURSEFORGE
 ENV CF_PAGE_URL=https://www.curseforge.com/minecraft/modpacks/roguelike-adventures-and-dungeons-2
-ENV MEMORY=16G
+ENV JAVA_VERSION=8
+ENV MEMORY=12G
 ENV EULA=TRUE
-ENV ENABLE_WHITELIST=FALSE
+ENV ENABLE_WHITELIST=False
 ENV ENFORCE_SECURE_PROFILE=FALSE
 ENV PORT=25565
 ENV JVM_OPTS="-XX:+PrintGCDetails -XX:+PrintGCDateStamps -Xloggc:/data/gc.log"
