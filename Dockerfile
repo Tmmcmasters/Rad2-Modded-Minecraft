@@ -1,24 +1,24 @@
-FROM itzg/minecraft-server:java11
+# Use the official itzg/minecraft-server image as the base
+FROM itzg/minecraft-server
 
-# Copy all server files into the container's data directory
-COPY . /data
-
-# Environment variables for the server
-ENV TYPE=FORGE
-ENV FORGE_INSTALLER=/data/forge-1.16.5-36.2.39.jar
+# Set environment variables for the RAD2 modpack
+ENV TYPE=CURSEFORGE
+ENV CF_SLUG="roguelike-adventures-and-dungeons-2"
 ENV EULA=TRUE
-# ENV ENABLE_WHITELIST=TRUE
-ENV MEMORY=16G
+ENV MEMORY="8G"
+ENV DIFFICULTY=hard
+ENV MODE=survival
+ENV PVP=false
+ENV ENABLE_COMMAND_BLOCK=true
+ENV SPAWN_PROTECTION=0
+ENV GENERATE_STRUCTURES=true
+ENV LEVEL_TYPE=DEFAULT
 
-# Set the working directory to /data
-WORKDIR /data
-
-# Use the correct path for the script
-RUN chmod +x /data/LaunchServer.sh
-
-ENTRYPOINT ["/data/LaunchServer.sh"]
-
+# Expose the default Minecraft server port
 EXPOSE 25565
 
-# Ensure the data directory is used for persistence
-# VOLUME /data
+# Volume for persistent data (world, mods, configs)
+# VOLUME /datas
+
+# Start the server
+CMD ["start"]
