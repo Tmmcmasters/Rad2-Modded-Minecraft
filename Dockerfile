@@ -10,12 +10,8 @@ COPY . .
 # Ensure LaunchServer.sh is executable
 RUN chmod +x LaunchServer.sh
 
-# Set file permissions to allow the server to write to /data
-RUN chown -R 1000:1000 /data && \
-    chmod -R 755 /data
-
-# Switch to a non-root user for security (uid 1000)
-USER 1000:1000
+# Debug: List files to confirm LaunchServer.sh exists
+RUN ls -la
 
 # Expose the Minecraft server port
 EXPOSE 25565
