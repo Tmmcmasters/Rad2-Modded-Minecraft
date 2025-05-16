@@ -5,10 +5,12 @@ FROM itzg/minecraft-server:java8
 ENV TYPE=FORGE
 ENV VERSION=1.16.5
 ENV FORGE_VERSION=36.2.39
-ENV MEMORY=10G
+ENV MEMORY=12G
 ENV EULA=TRUE
-ENV ENABLE_WHITELIST=FALSE
+ENV ENABLE_WHITELIST=TRUE
 ENV ENFORCE_SECURE_PROFILE=FALSE
+ENV PORT=25565
+ENV JVM_OPTS="-XX:+PrintGCDetails -XX:+PrintGCDateStamps -Xloggc:/data/gc.log"
 
 # Copy custom files to a temporary directory
 COPY . /tmp/data
