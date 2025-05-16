@@ -7,11 +7,8 @@ WORKDIR /data
 # Copy all server files into the container
 COPY . .
 
-# Debug: List files to confirm launchserver.sh is present
-RUN ls -la
-
-# Ensure launchserver.sh is executable
-RUN chmod +x launchserver.sh
+# Ensure LaunchServer.sh is executable
+RUN chmod +x LaunchServer.sh
 
 # Set file permissions to allow the server to write to /data
 RUN chown -R 1000:1000 /data && \
@@ -23,5 +20,5 @@ USER 1000:1000
 # Expose the Minecraft server port
 EXPOSE 25565
 
-# Run launchserver.sh to start the server
-CMD ["./launchserver.sh"]
+# Run LaunchServer.sh to start the server
+CMD ["./LaunchServer.sh"]
