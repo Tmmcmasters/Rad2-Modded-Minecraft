@@ -22,7 +22,7 @@ ENV JAVA_ARGS="-XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:MaxGCPauseMilli
 EXPOSE 25565
 
 # Volume for persistent data (world, mods, configs)
-VOLUME /data
+# VOLUME /data
 
 # Start the server
 CMD ["start"]
