@@ -1,0 +1,423 @@
+
+#List of entity configurations
+[[entities]]
+	entity = "minecraft:creeper"
+	minTier = 0
+	maxTier = 0
+	presetAffixes = []
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:silverfish"
+	minTier = 0
+	maxTier = 0
+	presetAffixes = []
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:endermite"
+	minTier = 0
+	maxTier = 0
+	presetAffixes = []
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "greekfantasy:hydra_head"
+	minTier = 0
+	maxTier = 0
+	presetAffixes = []
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "majruszs_difficulty:creeperling"
+	minTier = 0
+	maxTier = 0
+	presetAffixes = []
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:vex"
+	minTier = 0
+	maxTier = 0
+	presetAffixes = []
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:slime"
+	minTier = 0
+	maxTier = 0
+	presetAffixes = []
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:magma_cube"
+	minTier = 0
+	maxTier = 0
+	presetAffixes = []
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "stalwart_dungeons:nether_wart_cocoon"
+	minTier = 0
+	maxTier = 0
+	presetAffixes = []
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "greekfantasy:nemean_lion"
+	minTier = 0
+	maxTier = 0
+	presetAffixes = []
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "rats:plague_cloud"
+	minTier = 0
+	maxTier = 0
+	presetAffixes = []
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "betterendforge:end_slime"
+	minTier = 0
+	maxTier = 0
+	presetAffixes = []
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "atum:scarab"
+	minTier = 0
+	maxTier = 0
+	presetAffixes = []
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "twilightforest:maze_slime"
+	minTier = 0
+	maxTier = 0
+	presetAffixes = []
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "ars_nouveau:ally_vex"
+	minTier = 0
+	maxTier = 0
+	presetAffixes = []
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:blaze"
+	minTier = 0
+	maxTier = 6
+	presetAffixes = []
+	affixList = ["arctic"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "stalwart_dungeons:reinforced_blaze"
+	minTier = 0
+	maxTier = 6
+	presetAffixes = []
+	affixList = ["arctic"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "twilightforest:fire_beetle"
+	minTier = 0
+	maxTier = 6
+	presetAffixes = []
+	affixList = ["arctic"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:drowned"
+	minTier = 0
+	maxTier = 6
+	presetAffixes = []
+	affixList = ["molten"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:guardian"
+	minTier = 0
+	maxTier = 6
+	presetAffixes = []
+	affixList = ["molten"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:elder_guardian"
+	minTier = 0
+	maxTier = 6
+	presetAffixes = []
+	affixList = ["molten"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "dungeons_mobs:sunken_skeleton"
+	minTier = 0
+	maxTier = 6
+	presetAffixes = []
+	affixList = ["molten"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "dungeons_mobs:drowned_necromancer"
+	minTier = 0
+	maxTier = 6
+	presetAffixes = []
+	affixList = ["molten"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "dungeons_mobs:iceologer"
+	minTier = 0
+	maxTier = 6
+	presetAffixes = ["arctic"]
+	affixList = ["molten","enkindling"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "dungeons_mobs:frozen_zombie"
+	minTier = 0
+	maxTier = 6
+	presetAffixes = ["arctic"]
+	affixList = ["molten","enkindling"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "twilightforest:stable_ice_core"
+	minTier = 0
+	maxTier = 6
+	presetAffixes = []
+	affixList = ["molten","enkindling"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "twilightforest:unstable_ice_core"
+	minTier = 0
+	maxTier = 6
+	presetAffixes = []
+	affixList = ["molten","enkindling"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "twilightforest:ice_crystal"
+	minTier = 0
+	maxTier = 6
+	presetAffixes = []
+	affixList = ["molten","enkindling"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "iceandfire:sea_serpent"
+	minTier = 0
+	maxTier = 6
+	presetAffixes = []
+	affixList = ["molten"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "mowziesmobs:ferrous_wroughtnaut"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = ["lively","adaptable","dampening"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "mowziesmobs:barako"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = ["adaptable","arctic"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "mowziesmobs:frostmaw"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = ["arctic"]
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "alexsmobs:void_worm"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "alexsmobs:warped_mosco"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = ["plagued"]
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "twilightforest:naga"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = ["plagued"]
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "twilightforest:lich"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "twilightforest:yeti_alpha"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = ["arctic"]
+	affixList = ["molten","enkindling"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "twilightforest:snow_queen"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = ["arctic"]
+	affixList = ["molten","enkindling"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "twilightforest:minoshroom"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = ["adaptable","knocking"]
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "twilightforest:hydra"
+	minTier = 0
+	maxTier = 2
+	presetAffixes = ["enkindling"]
+	affixList = ["arctic","lively"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "twilightforest:knight_phantom"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "twilightforest:ur_ghast"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = ["lively","adaptable"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "ars_nouveau:wilden_boss"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "blue_skies:alchemist"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = ["lively","adaptable"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "blue_skies:summoner"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = ["lively","adaptable"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "blue_skies:arachnarch"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = ["plagued"]
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "blue_skies:starlit_crusher"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = ["lively"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "alexsmobs:void_worm"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "atum:pharaoh"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "stalwart_dungeons:awful_ghast"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "stalwart_dungeons:shelterer"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = ["lively","adaptable","dampening"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "stalwart_dungeons:shelterer_without_armor"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "meetyourfight:bellringer"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "meetyourfight:dame_fortuna"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "meetyourfight:swampjaw"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:wither"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = ["lively","adaptable"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:ender_dragon"
+	minTier = 2
+	maxTier = 3
+	presetAffixes = []
+	affixList = ["lively","adaptable"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "alexsmobs:crimson_mosquito"
+	minTier = 0
+	maxTier = 6
+	presetAffixes = ["plagued"]
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "twilightforest:mosquito_swarm"
+	minTier = 0
+	maxTier = 6
+	presetAffixes = ["plagued"]
+	affixList = []
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "rats:plague_beast"
+	minTier = 0
+	maxTier = 6
+	presetAffixes = ["plagued"]
+	affixList = []
+	affixPermission = "BLACKLIST"
+

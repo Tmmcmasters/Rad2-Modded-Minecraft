@@ -1,0 +1,2080 @@
+{
+	id: "2A79FAE23F150F49"
+	group: ""
+	order_index: 0
+	filename: "features_and_mechanics"
+	title: "Features | Mechanics"
+	icon: {
+		id: "losttrinkets:book_o_enchanting"
+		Count: 1b
+		ForgeCaps: {
+			"dungeons_libraries:built_in_enchantments": {
+				BuiltInEnchantments: [ ]
+			}
+		}
+	}
+	default_quest_shape: "square"
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: -2.0d
+			y: -7.5d
+			width: 13.0d
+			height: 2.5d
+			rotation: 0.0d
+			image: "rad2:textures/misc/rad.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -2.5d
+			y: 0.0d
+			width: 19.0d
+			height: 15.0d
+			rotation: 0.0d
+			image: "rad2:textures/misc/rad_frame_white.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 6.0d
+			y: 6.0d
+			width: 6.0d
+			height: 6.0d
+			rotation: 0.0d
+			image: "rad2:textures/misc/rad_dice.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 1.5d
+			y: -4.5d
+			width: 5.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "rad2:textures/misc/qb_dif_mech.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -6.5d
+			y: -4.5d
+			width: 4.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "rad2:textures/misc/qb_player.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 1.0d
+			y: 3.0d
+			width: 3.8d
+			height: 1.0d
+			rotation: 0.0d
+			image: "rad2:textures/misc/qb_world.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			icon: "ars_nouveau:ritual_moonfall"
+			x: 1.5d
+			y: -3.5d
+			description: [
+				"Blood Moon:"
+				"- Increases monster spawn cap and prevents sleeping."
+				""
+				"Harvest Moon:"
+				"Increases crop growth rate and drop rate."
+				""
+				"Blue Moon:"
+				"Gives players the Luck effect, increasing some loot quality and fishing loot."
+				""
+				"Sometimes a super version of lunar events occurs that has an amplified effect."
+			]
+			dependencies: ["577182F7C0C5B85B"]
+			id: "1D7B582F298ADFDF"
+			tasks: [{
+				id: "2166672F8EECC3D0"
+				type: "checkmark"
+				title: "New Lunar events"
+			}]
+			rewards: [{
+				id: "3BD45027CC335B19"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: "blue_skies:everbright_portal"
+			x: -1.0d
+			y: 4.0d
+			shape: "square"
+			subtitle: "Current dimensions count: 10"
+			description: [
+				"• Atum 2 - a new and unique desert dimension full of sand, temples, as well as many new enemies! Traveling through the dimension you can discover new artifacts, making your way to them through mountains of sand and enemies."
+				""
+				"• Blue skies: Everbright and Everdawn - two new dimensions, one lighter and colder, and the other darker and warmer. In each of them you will find new blocks, mobs, tools, weapons and bosses."
+				""
+				"• Dimensional Dungeons - limitless procedurally generated dungeons dimension."
+				""
+				"• The Bumblezone - an unBEElievable dimension full of bees that become REALLY angry if you take their honey!"
+				""
+				"• Tropicraft - dimension adding tropical world"
+				""
+				"• Twilight forest - a realm basked in mystery and eerie twilight."
+				""
+				"• Undergarden - a dark, subterranean world located deep below the bedrock of the Overworld. The flora here has adapted to their conditions and can grow anywhere, independent of light. Strange creatures call these dark lands home, and are plagued by the invasive Rotspawn, monsters originating from a chaotic, mysterious realm."
+			]
+			id: "6EAF4C02AC262FC0"
+			tasks: [{
+				id: "1A3AEEE0A82E3188"
+				type: "checkmark"
+				title: "New dimensions!"
+			}]
+			rewards: [{
+				id: "59B1B5BF66E28F2F"
+				type: "item"
+				item: {
+					id: "minecraft:golden_carrot"
+					Count: 1b
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			icon: "ars_nouveau:glyph_haste"
+			x: -2.0d
+			y: -2.5d
+			subtitle: "Dodge through mobs with the elenai dodge mod!"
+			description: [
+				"&6By tapping left alt while moving you can dash through projectiles and enemies without getting hurt."
+				""
+				""
+				""
+				"&a<More in depth details below>"
+				""
+				""
+				""
+				"By pressing the dodge key &3(default Left Alt, this is the same as pmmo list so might want to change this)&r while moving in a direction you can perform a dodge. This launches you in the direction you are walking, giving you brief invulnerability allowing you to pass through mobs and projectiles without taking damage."
+				""
+				"You cannot dodge while blocking with a shield or in mid-air, but you can dodge while eating."
+				""
+				"Dodging costs stamina feathers, indicated by the bar above your hunger bar."
+				""
+				"Wearing armor turns some of the feathers gray, making them unusable for dodging."
+				""
+				"The lightweight enchantment reduces the amount of gray feathers."
+				""
+				"There are also various potion effects that can affect your dodge feathers."
+			]
+			dependencies: ["0E5AE2A43020AFC3"]
+			id: "55DE8B3522A4F8A6"
+			tasks: [{
+				id: "36478D84CB178449"
+				type: "checkmark"
+				title: "Dodge"
+			}]
+			rewards: [{
+				id: "012430C1D7AE5D6B"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "elenaidodge2:long_replenishment"
+					}
+				}
+			}]
+		}
+		{
+			title: "New and overhauled structures!"
+			icon: "ars_nouveau:familiar_wixie"
+			x: 2.0d
+			y: 4.0d
+			description: [
+				"- underground and flying villages"
+				"- overhauled mineshaft, strongholds, dungeons, caves"
+			]
+			id: "6560CFA3F7737BBB"
+			tasks: [{
+				id: "3E8E9CE8F8302CF2"
+				type: "checkmark"
+				title: "New structures!"
+			}]
+			rewards: [{
+				id: "1387A24745731B2C"
+				type: "item"
+				item: {
+					id: "minecraft:golden_carrot"
+					Count: 1b
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			icon: "archers_paradox:redstone_arrow"
+			x: 0.5d
+			y: -3.5d
+			description: [
+				"Damage from sharp objects, bites, and cactuses will cause entities to bleed."
+				""
+				"Bleeding causes damage over time, like poison, and is lethal. Bandages can cure bleeding and provide regeneration."
+				""
+				"Each piece of armor equipped reduces bleed chance by 10%."
+				""
+				"In Expert and Master Mode, the level of Bleeding is increased."
+				""
+				"There are also ways to inflict bleeding upon your enemies, such as these broadhead arrows."
+			]
+			dependencies: ["0F19628AC9F04F38"]
+			id: "04CC7C1C1BFE864D"
+			tasks: [{
+				id: "344ADACFCEB0D8A7"
+				type: "checkmark"
+				title: "Bleeding"
+			}]
+			rewards: [
+				{
+					id: "0721D0DFC9A4BC06"
+					type: "item"
+					item: "majruszs_difficulty:bandage"
+					count: 2
+				}
+				{
+					id: "35989BBCC782F1D8"
+					type: "item"
+					item: {
+						id: "apotheosis:broadhead_arrow"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			icon: {
+				id: "losttrinkets:golden_skull"
+				Count: 1b
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": {
+						BuiltInEnchantments: [ ]
+					}
+				}
+			}
+			x: 0.5d
+			y: -2.0d
+			subtitle: "Difficulty over time"
+			description: [
+				"&6Difficulty will increase over time per-player, after 10 in-game days."
+				""
+				"As the difficulty increases mobs gain increased stats (damage, speed, health, knockback, magic resistance) and will spawn with more equipment that can be enchanted."
+				""
+				"The strength of mobs is determined by the average difficulty of nearby players."
+			]
+			dependencies: ["38049609F73B874B"]
+			id: "0F19628AC9F04F38"
+			tasks: [{
+				id: "7006A7CF76CC94F9"
+				type: "checkmark"
+				title: "Scaling Difficulty"
+				icon: "scalinghealth:heart_crystal"
+			}]
+			rewards: [{
+				id: "0BD8646D6609FB8F"
+				type: "item"
+				item: {
+					id: "majruszs_difficulty:bandage"
+					Count: 1b
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Progressive Bosses"
+			icon: {
+				id: "rats:rat_upgrade_creative"
+				Count: 1b
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": {
+						BuiltInEnchantments: [ ]
+					}
+				}
+			}
+			x: 2.5d
+			y: -2.0d
+			description: [
+				"The vanilla bosses have become stronger, with new abilities, better rewards and experience."
+				""
+				"Wither"
+				"- Summons Wither Skeletons. Drops Nether Star Shards."
+				""
+				"Ender Dragon"
+				"- Summons Shulkers"
+				""
+				"The Elder Guardian while not a boss, still gains power each time they are defeated."
+				""
+				"-Attacks way faster than usual"
+				""
+				"-The Monument is fully protected while they are alive."
+				""
+				"- Summons Guardians. Drops Sponges and Elder Guardian Spikes."
+			]
+			dependencies: ["577182F7C0C5B85B"]
+			id: "68203BBBB58B26EA"
+			tasks: [{
+				id: "6C079A785E1D9855"
+				type: "checkmark"
+				title: "Progressive Bosses"
+				icon: "productivebees:upgrade_productivity"
+			}]
+			rewards: [{
+				id: "07F3497AA521167E"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						CustomPotionEffects: [
+							{
+								Duration: 1200
+								Id: 39b
+								Amplifier: 1b
+							}
+							{
+								Duration: 1200
+								Id: 42b
+								Amplifier: 4b
+							}
+						]
+						Potion: "minecraft:thick"
+						display: {
+							Lore: ["{\"text\":\"Deal and recieve double damage\",\"color\":\"dark_red\",\"italic\":false}"]
+							Name: "{\"italic\":false,\"text\":\"Berserker's Brew\",\"color\":\"dark_red\"}"
+						}
+					}
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			icon: "majruszs_difficulty:undead_battle_standard"
+			x: 1.5d
+			y: -2.0d
+			subtitle: "Difficulty through progression"
+			description: [
+				"The game progress is divided into three parts: Normal Mode, Expert Mode, and Master Mode. These are not per-player, and affect the whole world."
+				""
+				"- Normal Mode starts at the beginning of the game."
+				""
+				"- Expert Mode starts when anyone kills the Wither. (or enters the End)"
+				""
+				"- Master Mode starts when the Ender Dragon is defeated by someone."
+			]
+			dependencies: ["0F19628AC9F04F38"]
+			id: "577182F7C0C5B85B"
+			tasks: [{
+				id: "654635E50ADA3AD9"
+				type: "checkmark"
+				title: "Progressive Difficulty"
+			}]
+			rewards: [{
+				id: "203EF8DF6395F7A6"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "minecraft:healing"
+					}
+				}
+			}]
+		}
+		{
+			title: "Normal mode changes"
+			icon: "minecraft:skeleton_skull"
+			x: 1.5d
+			y: -0.5d
+			subtitle: "Some of the new difficulty mechanics:"
+			description: [
+				"- Groups of enemies"
+				"Enemies appear in groups with one leader and followers who attack the same target as the leader. Followers are more likely to have weapons and leaders to have armors."
+				""
+				"- Undead Army (new Raid)"
+				"The new raid starts after killing a certain amount of undead enemies. It has 3-5 waves, scales difficulty over time, and rewards the player with a treasure bag after finishing it. Also scales difficulty with each player participating in!"
+				""
+				"- fall damage can causes Slowness and Nausea"
+				""
+				"- drowning damage can causes Nausea and Weakness"
+				""
+				"- Creepers may spawn with a negative effect"
+				""
+				"- animals (like Wolves), Zombies, and Spiders can bite you causing Bleeding"
+				""
+				"- arrows and direct damage from sharp items (tools, weapons, shears) also can cause Bleeding"
+				""
+				"- touching a cactus also may cause Bleeding"
+			]
+			dependencies: ["577182F7C0C5B85B"]
+			id: "6E509EA1B20B6476"
+			tasks: [{
+				id: "413AD55DBDF6F7A1"
+				type: "checkmark"
+				title: "New difficulty mechanics"
+			}]
+			rewards: [
+				{
+					id: "1741242638737932"
+					type: "item"
+					item: "majruszs_difficulty:bandage"
+					count: 2
+				}
+				{
+					id: "680F2DF9758F6039"
+					type: "ftbmoney:money"
+					ftb_money: 5L
+				}
+			]
+		}
+		{
+			icon: "farmersdelight:cake_slice"
+			x: -5.0d
+			y: 5.0d
+			subtitle: "Benefits for eating variety of foods"
+			description: [
+				"Eating a variety of nutrients, with the right balance, will grant you buffs. There are no negatives for not keeping a variety however."
+				""
+				"Food now has tooltips that show which nutrients they provide, along with the total number of Nutritional Units (NUs)."
+				""
+				"To see Nutritional Balance, press the Nutrient Gui keybind (Default: N) or click the bread icon in your inventory."
+				""
+				"- Blue indicates your current NUs for each category"
+				"- Green lines show the range for buffs. Veggies has a limitless range."
+			]
+			dependencies: ["128C6C5B6273C0F3"]
+			dependency_requirement: "one_started"
+			id: "35190DA84895073D"
+			tasks: [{
+				id: "6331E4029462A823"
+				type: "checkmark"
+				title: "Dietary Diversity"
+			}]
+			rewards: [
+				{
+					id: "2A244FE12BC85191"
+					type: "item"
+					item: {
+						id: "minecraft:suspicious_stew"
+						Count: 1b
+						tag: {
+							Effects: [{
+								EffectId: 23b
+								EffectDuration: 7
+							}]
+						}
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "5D8B3F37E513A3C9"
+					type: "item"
+					item: {
+						id: "farmersdelight:cooked_bacon"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "1A46BAB54ADD68DC"
+					type: "item"
+					item: {
+						id: "farmersdelight:cooked_rice"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "31BDA8C55CA79C57"
+					type: "item"
+					item: {
+						id: "supplementaries:candy"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "2026D361B19D0768"
+					type: "item"
+					item: {
+						id: "berry_nice:goldensweetberry"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: "fins:spindly_emerald"
+			x: 0.0d
+			y: 4.0d
+			description: [
+				"There are new villager jobs, trades, workstations, and advancements!"
+				""
+				"- Oceanographer (Oceanography Table)"
+				""
+				"- Forester (Forestry Bench)"
+				""
+				"- Engineer (Blueprint Table)"
+				""
+				"- Florist (Gardening Table)"
+				""
+				"- Hunter (Hunting Post)"
+				""
+				"- Netherologist (Decayed Workbench)"
+				""
+				"- Enderologist (Purpur Altar)"
+				""
+				"- Apiarist (Honey Pot)"
+				""
+			]
+			id: "2574DDCEFF8FE519"
+			tasks: [{
+				id: "62AD44FDD001C367"
+				type: "checkmark"
+				title: "Improved villagers"
+			}]
+			rewards: [{
+				id: "1A3E8B8ABF4D5B26"
+				type: "item"
+				item: {
+					id: "minecraft:golden_carrot"
+					Count: 1b
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			icon: {
+				id: "enigmaticlegacy:enigmatic_amulet"
+				Count: 1b
+				tag: {
+					AssignedColor: 0.1f
+				}
+			}
+			x: -3.0d
+			y: -2.0d
+			description: [
+				"&6Trinkets and Curios are passive items that buff the player when worn in special slots."
+				""
+				""
+				""
+				"&a<More in depth details below>"
+				""
+				""
+				""
+				"Lost Trinkets adds more than 50 unlockable trinkets with different abilities and rarities."
+				""
+				"Trinkets are randomly unlocked during some activities like killing enemies and bosses, trading, mining ores, cutting trees, and farming."
+				""
+				"Each activity has a different chance of unlocking a trinket, with bosses having the highest chance."
+				""
+				"There is a 2 minute cooldown after unlocking a trinket before you can unlock another."
+				""
+				"You can access the Trinkets GUI with its keybind (Default: &3R&r). Here you can equip them and unlock more slots."
+				""
+				"========================"
+				""
+				"There are also countless curios which have their own slot in your Curio Inventory which you can open with the icon in your inventory, or with a keybind (Default: &3G&r)."
+				""
+				"Try equipping the enigmatic amulet in your inventory by placing it into one of the \"Charm\" slots."
+				"You can use the scroll bar or your mouse wheel to see all the slots."
+			]
+			dependencies: ["2B14E71EF06F5938"]
+			id: "0E5AE2A43020AFC3"
+			tasks: [{
+				id: "0904DC2D17454C24"
+				type: "checkmark"
+				title: "Trinkets and Curios"
+			}]
+		}
+		{
+			title: "Corail's Tombstones"
+			x: 1.0d
+			y: 4.0d
+			subtitle: "Keeps safe your inventory items on death with many features for better survivability and exploration"
+			description: [
+				"Corail Tombstone handles your death in Minecraft by providing tons of configuration options, many features to encourage to discover the world and several compatibilities between mods."
+				""
+				"It also introduces a perk system : the Knowledge of Death, and a magic system based on some enchantable items with the help of the Souls haunting the Decorative Graves and waiting for a way to be freed for their eternal sentence.A screen in game allows to configure player preferences, access a Compendium of infos and the selection of the perks."
+			]
+			id: "00EEAE0FACC02300"
+			tasks: [{
+				id: "6121BA739D1C7316"
+				type: "advancement"
+				advancement: "tombstone:adventure/first_knowledge"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "3D72B5E03815639D"
+					type: "item"
+					item: {
+						id: "minecraft:bone"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "2304ED8288AB39AC"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "&4Check the questbook for more info!"
+			icon: {
+				id: "kubejs:star"
+				Count: 1b
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": {
+						BuiltInEnchantments: [ ]
+					}
+				}
+			}
+			x: -8.0d
+			y: -2.0d
+			subtitle: "Welcome to RAD2!"
+			description: [
+				"&6This quest book will guide you through all the mechanics of this pack."
+				""
+				"To collect any reward simply click on in it in the above Rewards box, as you can above, to get a torch for some light as you get going."
+				""
+				"To move onto the next quest you can click the view dependants button &6▶&r below the close &c&lX&r button to see the next available quest(s), or just click a lit up quest linked to a completed gold outlined quest."
+			]
+			size: 2.0d
+			id: "7FF57EE6F8F6FC1C"
+			tasks: [{
+				id: "063DC6675EC1C0AC"
+				type: "dimension"
+				dimension: "minecraft:overworld"
+			}]
+			rewards: [{
+				id: "7F6399762CFD3995"
+				type: "item"
+				item: {
+					id: "minecraft:torch"
+					Count: 1b
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Character progression and skills"
+			icon: "itemfilters:item_group"
+			x: -6.0d
+			y: 2.0d
+			subtitle: "More in depth features of the stats"
+			description: [
+				"Project MMO adds stats that level up while doing certain activities."
+				""
+				"You can access the Project MMO menu with the Open Menu key (Default: P). Here you can see stats, skills, the glossary and their benefits, how to get experience, and much more."
+				""
+				"Higher skill levels gives you bonuses related to the skill, and allows you to use more items."
+				""
+				"Certain items will grant a boost to Skill XP gain, when either held in your hands or worn."
+				""
+				"Some biomes and dimensions also adjust Skill XP gain, information like this can be found in the Glossary as well."
+				""
+				"You can create a party with the \"/pmmo party\" command, which gives increased XP gain, reduced friendly fire, and minor Skill XP sharing."
+			]
+			dependencies: ["79F271A2D7FA06A1"]
+			id: "000000000000009D"
+			tasks: [{
+				id: "000000000000009E"
+				type: "checkmark"
+				title: "Project MMO"
+			}]
+			rewards: [{
+				id: "028B92F60396E179"
+				type: "item"
+				title: "That must have been a lot to read, time to refresh that dry mouth!"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "minecraft:water"
+					}
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Alchemy"
+			icon: "minecraft:brewing_stand"
+			x: -4.25d
+			y: 1.275d
+			description: [
+				"Alchemy experience is gained by crafting brewing ingredients and brewing potions in a brewing stand."
+				""
+				"Higher levels increase the chance for extra potions to be brewed."
+			]
+			dependencies: ["000000000000009D"]
+			size: 0.85d
+			optional: true
+			id: "64F9EE8910E19872"
+			tasks: [{
+				id: "61D1CC9EF6A0B00D"
+				type: "pmmo:skill"
+				title: "Reach Alchemy 2"
+				skill: "alchemy"
+				requiredLevel: 2.0d
+			}]
+		}
+		{
+			title: "Agility"
+			icon: {
+				id: "minecraft:iron_boots"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -6.8d
+			y: 3.8249999999999997d
+			description: [
+				"Agility experience is gained from multiple sources related to movement."
+				""
+				"- Sprinting: the faster you are going, the more experience you gain."
+				""
+				"- Jumping: the higher you jump the more experience you gain."
+				""
+				"- Being saved from fall damage by this skill"
+				""
+				"Higher levels will increase the chance to prevent fall damage."
+			]
+			dependencies: ["000000000000009D"]
+			size: 0.85d
+			optional: true
+			id: "63F8E2CB45B9803D"
+			tasks: [{
+				id: "7B2B6E360C95350B"
+				type: "pmmo:skill"
+				title: "Reach Agility 2"
+				skill: "agility"
+				requiredLevel: 2.0d
+			}]
+		}
+		{
+			title: "Swimming"
+			icon: "minecraft:tropical_fish"
+			x: -4.25d
+			y: 3.8249999999999997d
+			description: [
+				"Swimming experience. Yep."
+				""
+				"Reaching level 25 will unlock underwater night vision."
+			]
+			dependencies: ["000000000000009D"]
+			size: 0.85d
+			optional: true
+			id: "214CDC923D179E56"
+			tasks: [{
+				id: "06992B436F4CECB3"
+				type: "pmmo:skill"
+				title: "Reach Swimming 2"
+				skill: "swimming"
+				requiredLevel: 2.0d
+			}]
+		}
+		{
+			title: "Flying"
+			icon: {
+				id: "minecraft:elytra"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -4.25d
+			y: 2.975d
+			description: [
+				"Flying experience is gained during Elytra flight."
+				""
+				"Higher levels do not give any bonuses."
+			]
+			dependencies: ["000000000000009D"]
+			size: 0.85d
+			optional: true
+			id: "0A0E3A6CA17F84F9"
+			tasks: [{
+				id: "5FEF56B865BDB228"
+				type: "pmmo:skill"
+				title: "Reach Flying 2"
+				skill: "flying"
+				requiredLevel: 2.0d
+			}]
+		}
+		{
+			title: "Endurance"
+			icon: {
+				id: "minecraft:iron_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -5.1d
+			y: 0.425d
+			description: [
+				"Endurance experience is gained by taking damage."
+				""
+				"Higher levels will increase damage reduction and max health."
+			]
+			dependencies: ["000000000000009D"]
+			size: 0.85d
+			optional: true
+			id: "78DB7D7B18894DA4"
+			tasks: [{
+				id: "2D9E922E01FBDBC0"
+				type: "pmmo:skill"
+				title: "Reach Endurance 2"
+				skill: "endurance"
+				requiredLevel: 2.0d
+			}]
+		}
+		{
+			title: "Combat"
+			icon: {
+				id: "minecraft:iron_sword"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -6.8d
+			y: 0.425d
+			description: [
+				"Combat experience is gained by attacking mobs."
+				""
+				"Less experience is gained if the mob dies, or is one-shot from full health."
+				""
+				"Higher levels increase melee damage."
+			]
+			dependencies: ["000000000000009D"]
+			size: 0.85d
+			optional: true
+			id: "71C94DF46703BB3F"
+			tasks: [{
+				id: "6ABDB73D0FACAA3F"
+				type: "pmmo:skill"
+				title: "Reach Combat 2"
+				skill: "combat"
+				requiredLevel: 2.0d
+			}]
+		}
+		{
+			title: "Archery"
+			icon: {
+				id: "minecraft:bow"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -4.25d
+			y: 0.425d
+			description: [
+				"Archery experience is gained by attacking mobs with ranged weapons."
+				""
+				"More experience is gained if the mob dies, is one-shot from full health, and if the distance was more than 16 blocks."
+				""
+				"Higher levels increase ranged damage."
+				""
+				"NOTICE: Experience gain has issues, and we can't fix it on our end."
+			]
+			dependencies: ["000000000000009D"]
+			size: 0.85d
+			optional: true
+			id: "261FF95C675A0E98"
+			tasks: [{
+				id: "05496F61D6933A07"
+				type: "pmmo:skill"
+				title: "Reach Archery 2"
+				skill: "archery"
+				requiredLevel: 2.0d
+			}]
+		}
+		{
+			title: "Excavation"
+			icon: {
+				id: "minecraft:iron_shovel"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -7.6499999999999995d
+			y: 2.125d
+			description: [
+				"Excavation experience is gained by digging blocks like dirt, sand and snow."
+				""
+				"Higher levels allow you to dig faster and to find treasure when digging."
+			]
+			dependencies: ["000000000000009D"]
+			size: 0.85d
+			optional: true
+			id: "5AC9081752E85D51"
+			tasks: [{
+				id: "4B5BBF2D8C973C8E"
+				type: "pmmo:skill"
+				title: "Reach Excavation 2"
+				skill: "excavation"
+				requiredLevel: 2.0d
+			}]
+		}
+		{
+			title: "Mining"
+			icon: {
+				id: "minecraft:iron_pickaxe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -7.6499999999999995d
+			y: 1.275d
+			description: [
+				"Mining experience is gained by breaking stone-based blocks."
+				""
+				"Higher levels allow you to mine faster and mine extra ore."
+			]
+			dependencies: ["000000000000009D"]
+			size: 0.85d
+			optional: true
+			id: "5562C277365DF050"
+			tasks: [{
+				id: "73CC33A7E58D3A98"
+				type: "pmmo:skill"
+				title: "Reach Mining 2"
+				skill: "mining"
+				requiredLevel: 2.0d
+			}]
+		}
+		{
+			title: "Woodcutting"
+			icon: {
+				id: "minecraft:iron_axe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -7.6499999999999995d
+			y: 2.975d
+			description: [
+				"Woodcutting experience is gained by breaking wood blocks (logs, planks, etc.)."
+				""
+				"Higher levels allow you to chop faster and sometimes chop extra wood."
+			]
+			dependencies: ["000000000000009D"]
+			size: 0.85d
+			optional: true
+			id: "416E81CE76446066"
+			tasks: [{
+				id: "445298890AE1F456"
+				type: "pmmo:skill"
+				title: "Reach Woodcutting 2"
+				skill: "woodcutting"
+				requiredLevel: 2.0d
+			}]
+		}
+		{
+			title: "Farming"
+			icon: {
+				id: "minecraft:iron_hoe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -5.1d
+			y: 3.8249999999999997d
+			description: [
+				"Farming experience is gained from crops maturing, harvesting certain crops, and breeding animals."
+				""
+				"Higher levels increase harvest size and growth speed."
+			]
+			dependencies: ["000000000000009D"]
+			size: 0.85d
+			optional: true
+			id: "128C6C5B6273C0F3"
+			tasks: [{
+				id: "084B09B8D7B4FCF9"
+				type: "pmmo:skill"
+				title: "Reach Farming 2"
+				skill: "farming"
+				requiredLevel: 2.0d
+			}]
+		}
+		{
+			title: "Fishing"
+			icon: {
+				id: "minecraft:fishing_rod"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -7.6499999999999995d
+			y: 3.8249999999999997d
+			description: [
+				"You'll never guess what Fishing experience is gained from. That's right, fishing. Craziest thing."
+				""
+				"Higher levels increase the chance of catching better items and enchantments."
+				""
+				"You can see detailed info on this in the Glossary."
+			]
+			dependencies: ["000000000000009D"]
+			size: 0.85d
+			optional: true
+			id: "4C18DC09C5FFB372"
+			tasks: [{
+				id: "23AC77799D109F45"
+				type: "pmmo:skill"
+				title: "Reach Fishing 2"
+				skill: "fishing"
+				requiredLevel: 2.0d
+			}]
+		}
+		{
+			title: "Magic"
+			icon: "ars_nouveau:wand"
+			x: -7.6499999999999995d
+			y: 0.425d
+			description: [
+				"Magic experience is gained by mining magical ores, reading tomes, and casting spells."
+				""
+				"Most ranged attacks that are not a bow also count towards magic xp, like throwing rocks."
+				""
+				"Higher levels grant increased maximum mana, mana regeneration, and magic damage."
+				""
+				"NOTICE: Experience gain has issues, and we can't fix it on our end."
+			]
+			dependencies: ["000000000000009D"]
+			size: 0.85d
+			optional: true
+			id: "777FFBDE3AD629F9"
+			tasks: [{
+				id: "0CF73E140BE52E48"
+				type: "pmmo:skill"
+				title: "Reach Magic 2"
+				skill: "magic"
+				requiredLevel: 2.0d
+			}]
+		}
+		{
+			title: "Smithing"
+			icon: "minecraft:smithing_table"
+			x: -4.25d
+			y: 2.125d
+			description: [
+				"Smithing experience is gained from repairing items in an anvil and salvaging items at a smithing table (sneak-use)."
+				""
+				"Higher levels give multiple benefits."
+				""
+				"- Bonus ores smelted"
+				"- Increased salvage success rate"
+				"- Increased repair amount in anvil"
+				"- Reduced chance of anvil damage"
+			]
+			dependencies: ["000000000000009D"]
+			size: 0.85d
+			optional: true
+			id: "41F4A32BEA5C4295"
+			tasks: [{
+				id: "21B0F582F8246761"
+				type: "pmmo:skill"
+				title: "Reach Smithing 2"
+				skill: "smithing"
+				requiredLevel: 2.0d
+			}]
+		}
+		{
+			title: "Waystones"
+			x: 3.0d
+			y: 4.0d
+			description: [
+				"Waystones allows players to return to them once they've been activated, either through a Warp Scroll, a Warp Stone, or another waystone."
+				""
+				"You can find some in the wild, in towers, and in villages."
+				""
+				"You can also buy one in the shop and put it wherever you want."
+			]
+			id: "6AA5B436C67A93FF"
+			tasks: [{
+				id: "26621448B976E40A"
+				type: "observation"
+				title: "Find a waystone"
+				icon: {
+					id: "waystones:waystone"
+					Count: 1b
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+				}
+				timer: 0L
+				observe_type: 0
+				to_observe: "waystones:waystone"
+			}]
+			rewards: [{
+				id: "0BE7676AB6C019ED"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Gathering"
+			icon: {
+				id: "bountifulbaubles:gloves_digging_iron"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -8.5d
+			y: 2.125d
+			description: [
+				"Gathering skill is the sum of your Mining, Woodcutting and Excavating experience."
+				""
+				"Higher levels allow you to equip and use higher quality items."
+			]
+			dependencies: [
+				"416E81CE76446066"
+				"5562C277365DF050"
+				"5AC9081752E85D51"
+			]
+			dependency_requirement: "one_completed"
+			size: 0.85d
+			optional: true
+			id: "6754527124EA8B6B"
+			tasks: [{
+				id: "2D5AB0F4310659C7"
+				type: "pmmo:skill"
+				title: "Reach Gathering 2"
+				skill: "gathering"
+				requiredLevel: 2.0d
+			}]
+		}
+		{
+			title: "Specialization"
+			icon: {
+				id: "kubejs:mark_miner"
+				Count: 1b
+				ForgeCaps: {
+					"dungeons_libraries:built_in_enchantments": {
+						BuiltInEnchantments: [ ]
+					}
+				}
+			}
+			x: 3.75d
+			y: -2.0d
+			shape: "hexagon"
+			description: [
+				"You can choose starter gear in the Specialization chapter. You can get Marks which can boost pmmo exp, however you cannot change your specialization. If you are in multiplayer you should pick your specialization before joining a team."
+				""
+				"&eThis quest requires completion of another quest in another chapter. Head over to the Specialization Chapter by hovering your cursor on the left edge of this quest book, while no quest is opened."
+			]
+			dependencies: [
+				"7D7A71EA9FCC15E2"
+				"68203BBBB58B26EA"
+			]
+			size: 1.5d
+			id: "0A8694E6D7E5B93E"
+			tasks: [{
+				id: "5FA8841A3A900FF6"
+				type: "questsadditions:time"
+				title: "Choose a Specialization"
+				icon: {
+					id: "kubejs:mark_huntsman"
+					Count: 1b
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+				}
+				elapsedTime: 1L
+			}]
+		}
+		{
+			icon: "ars_nouveau:glyph_leap"
+			x: -2.0d
+			y: -1.5d
+			subtitle: "Scale up to 3-high walls with the wall jump mod!"
+			description: [
+				"&6Hold sneak against a wall to hang onto it, then press jump again for some extra vertical mobility."
+				""
+				""
+				""
+				"&a<More in depth details below>"
+				""
+				""
+				""
+				"Jump onto a wall and hold the wall jump key on a wall (default Shift) will allow you to \"cling\" onto the wall for a short time."
+				""
+				"You can't hold on forever though as you will slowly slide down from the wall."
+				""
+				"Releasing the wall jump key will cause you to jump off the wall giving you extra vertical height."
+				""
+				"If you find sneaking to wall jump too difficult you can try rebinding the wall-jump jey to the same as your jump keybind instead."
+			]
+			dependencies: ["0E5AE2A43020AFC3"]
+			id: "0617314E10C6AEF9"
+			tasks: [{
+				id: "5E69C9DEC9B3F925"
+				type: "checkmark"
+				title: "Wall-Jump!"
+			}]
+			rewards: [{
+				id: "19A9DBC835F1A160"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "minecraft:leaping"
+					}
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			icon: "bountifulbaubles:broken_black_dragon_scale"
+			x: -5.95d
+			y: 3.8249999999999997d
+			subtitle: "Dragonslayer, Shadow, Light, Wayfaring, Dungeoneering"
+			description: [
+				"These skills do not have bonuses like the others, but are used solely for item requirements."
+				""
+				"Dragonslayer is gained from... slaying dragons."
+				""
+				"Shadow is gained from killing certain mobs (see Glossary's Mobs Info section) and crafting Eidolon items."
+				""
+				"Light is gained from killing certain mobs (see Glossary's Mobs Info section)."
+				""
+				"Wayfaring is gained from exploring new structures and areas."
+				""
+				"Dungeoneering is gained from crafting and mining dungeon related items and blocks."
+			]
+			dependencies: ["000000000000009D"]
+			size: 0.85d
+			optional: true
+			id: "22CB70395C58370B"
+			tasks: [{
+				id: "4544ECA11FB881CE"
+				type: "checkmark"
+				title: "Other Skills"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.0d
+			subtitle: "Elite Mobs"
+			description: [
+				"&6Mobs have a chance to spawn as Champions, elite mobs with enhanced stats, extra abilities, and extra loot (Enchanted Books and Coins)."
+				""
+				""
+				""
+				"&a<More in depth details below>"
+				""
+				""
+				""
+				""
+				"Champions have affixes that grant them powers, with higher tiers having more affixes."
+				""
+				"Champions can spawn as 6 different tiers, increasing in power with each tier, luckily only the first 2 tiers will spawn until you reach a certain progression point (more about that later)"
+				""
+				"-Tier 1 Champions can be identified by their yellow particles, while Tier 2 champions will have orange particles."
+				""
+				"Fighting these champions is not always the best option early in the game. Champions are a test of your knowledge of building, agility and modded knowledge; charging in with just a sword is almost a guaranteed way to get a quick death."
+				""
+				"When faced against these mobs, be creative with the two mobility options from the previous quests to quickly escape from danger when needed by dashing through the champions when cornered or getting onto high ground where they cannot reach you."
+			]
+			dependencies: [
+				"55DE8B3522A4F8A6"
+				"0617314E10C6AEF9"
+			]
+			id: "38049609F73B874B"
+			tasks: [{
+				id: "72DE9AD07435F340"
+				type: "checkmark"
+				title: "Champions"
+				icon: {
+					id: "kubejs:skull"
+					Count: 1b
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "076B6F8032E82625"
+					type: "item"
+					item: {
+						id: "minecraft:scaffolding"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+					}
+					count: 3
+				}
+				{
+					id: "62F54DEF71163CC9"
+					type: "item"
+					item: {
+						id: "minecraft:oak_boat"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Just Enough Items (JEI)"
+			icon: "ars_nouveau:glyph_craft"
+			x: -5.0d
+			y: -2.0d
+			subtitle: "Your encyclopedia for modded recipes!"
+			description: [
+				"&6JEI lets you view recipes and uses for items by hovering your mouse on an item then pressing r or u on them."
+				""
+				"&eClick the Grey Checkmark to unlock the next quests."
+				""
+				""
+				""
+				""
+				"&a<More in depth details below>"
+				""
+				""
+				""
+				""
+				"JEI is a recipe browser found on the right side of your screen when in any inventory interface."
+				""
+				"You can use it to look up any item and find out its uses."
+				""
+				"• Hovering over any item (not just in the JEI interface) and pressing the &3\"R\"&r key (for Recipe) will display that item's recipe."
+				"• Pressing the &3\"U\"&r key (for Use) shows what that item can be used to create through crafting grids."
+				"• To search by mod name use the \"&3@&r\" key before search in search box. (e.g. @Quark)"
+				"• To select the search box without clicking on it, the player can press &3Ctrl + F&r."
+				"• To bookmark a recipe (for easier crafting later, will also save in a menu on the left side of the inventory screen): Hover over the item and press \"&3A&r\"."
+			]
+			dependencies: ["143E7EB383FC8A60"]
+			id: "7B1C0892C86A4177"
+			tasks: [{
+				id: "4665A7B467B41395"
+				type: "checkmark"
+				title: "Click this to progress"
+			}]
+		}
+		{
+			title: "Using JEI"
+			x: -5.5d
+			y: -3.5d
+			description: [
+				"Use jei to figure out how to craft the items above."
+				""
+				"You can click an item in the Tasks section of a quest to view its recipe."
+				""
+				"&eThese are Item Quests. A majority of the quests in this pack like this one will be completed by gaining the required item in your inventory. You will automatically get a pop up message in the top corner when this happens."
+				""
+				"&eYou do not lose the item when completing these quests."
+			]
+			dependencies: ["7B1C0892C86A4177"]
+			id: "1AC343ABFB96DF71"
+			tasks: [
+				{
+					id: "5D36D0A389583FD4"
+					type: "item"
+					item: {
+						id: "farmersdelight:cutting_board"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "68648A32FBB76FA4"
+					type: "item"
+					item: {
+						id: "aquaculture:wooden_fillet_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "4A0EBC714D0220B9"
+					type: "item"
+					item: {
+						id: "iceandfire:earplugs"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "0917374F8AA170A7"
+					type: "item"
+					item: {
+						id: "simplefarming:fruit_salad"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: "kubejs:coin_q_1"
+			x: -0.5d
+			y: -0.5d
+			description: [
+				"There are two kinds of coins that can be discovered in this pack, material coins and quest coins."
+				""
+				"Quest Coins are obtained from completing quests, and can be exchanged for items at the shop."
+				""
+				"The shop can be found on the top-right of this quest book, it looks like a bag with coins scattered around it."
+				""
+				"Material Coins (copper, iron, gold, diamond) are tangible items that drop from champions."
+				""
+				"Stronger champions drop better coins."
+				""
+				"They can be exchanged for items in the Coin Shop quest tab, which is a chapter found on the left."
+				""
+			]
+			dependencies: ["38049609F73B874B"]
+			id: "3F721FF28238E067"
+			tasks: [{
+				id: "330D37420BB0FF60"
+				type: "checkmark"
+				title: "Coins"
+			}]
+			rewards: [
+				{
+					id: "362840EA81A14A17"
+					type: "ftbmoney:money"
+					ftb_money: 10L
+				}
+				{
+					id: "77EE4C757E3FCD49"
+					type: "item"
+					item: {
+						id: "kubejs:copper_coin"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "PMMO Skills"
+			x: -6.0d
+			y: -0.5d
+			shape: "hexagon"
+			subtitle: "(brief explanation about stats)"
+			description: [
+				"Project: Massive Multiplaer Online (PMMO) adds stats that increase when doing certain activities."
+				""
+				"These stats can be seen in the top-left of the screen and toggled on and off by pressing the &3Show List &rkey &3(default Left Alt)&r."
+				""
+				"Items can have Requirements, XP Boosts, or Salvageable. These can be toggled with the Toggle Tooltip key &3(default F6)&r"
+				""
+				"Requirements show the name of a specific skills needed to use it as a tool, weapon, wear, or use. The requirements will be in either green or red text depending on if you meet the stat conditions or not. If you don't meet the requirements of an item it cannot be used."
+				""
+				"XP Boosts increase the amount of xp you gain from a specific stat, shown as a +% on the item and on the stats in the top left. These are generally found on shields and armor. They can apply either in your hand, in your offhand, or when worn as armor/curio slot. Being in certain biomes or dimensions can also affect your xp boosts."
+				""
+				"When you die you will lose 25% progress to gaining a level, however you will never lose actual levels meaning you will not lose access to unlocked requirements after completing them."
+			]
+			dependencies: ["143E7EB383FC8A60"]
+			id: "79F271A2D7FA06A1"
+			tasks: [{
+				id: "35029CE2D859E7F9"
+				type: "pmmo:skill"
+				skill: "agility"
+				requiredLevel: 1.0d
+			}]
+			rewards: [{
+				id: "3EF5B45E046B2310"
+				type: "random"
+				table_id: 8545390299491237994L
+			}]
+		}
+		{
+			title: "Reforging?"
+			icon: "minecraft:smithing_table"
+			x: -3.0d
+			y: 1.5d
+			subtitle: "No goblins to rob you of your hard earned platinum"
+			description: [
+				"To reforge an item interact with a smithing table."
+				""
+				"Click the reforge button."
+				""
+				"Add the item + its repair material and click the hammer"
+				""
+				"If the item doesn't have a repair material (like curios), you will need to use a nether star instead."
+			]
+			dependencies: [
+				"41F4A32BEA5C4295"
+				"4C74D405A58FCD5B"
+			]
+			dependency_requirement: "one_started"
+			id: "0D3A108B094C746F"
+			tasks: [{
+				id: "73E91283ED684744"
+				type: "observation"
+				title: "Reforging?"
+				icon: "minecraft:smithing_table"
+				timer: 80L
+				observe_type: 0
+				to_observe: "minecraft:smithing_table"
+			}]
+			rewards: [
+				{
+					id: "35A3201138EF4229"
+					type: "item"
+					item: {
+						id: "minecraft:cobblestone"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "665C2F0D72342C11"
+					type: "item"
+					item: {
+						id: "minecraft:stone_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Hardmode Booster Pack"
+			x: -3.0d
+			y: -4.0d
+			shape: "rsquare"
+			description: [
+				"Since you joined the server late this booster kit will help you overcome the increased difficulty."
+				""
+				"These stats will level up you enough to use iron equipment and a basic spellbook."
+				""
+				"These pmmo stat bonuses are not affected by xp boosts."
+			]
+			hide_text_until_complete: false
+			size: 2.0d
+			optional: true
+			secret: true
+			id: "54D9FFC26A3D59D8"
+			tasks: [{
+				id: "2358E374BEAF092F"
+				type: "custom"
+				title: "Claim Expert Booster Pack"
+				icon: {
+					id: "kubejs:levelup"
+					Count: 1b
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "0E5266FECA3997C1"
+					type: "pmmo:xpreward"
+					title: "Level 25 Combat"
+					auto: "disabled"
+					skill: "combat"
+					amount: 7789.0d
+					ignoreBonuses: true
+				}
+				{
+					id: "1FA0C2103D1E12C1"
+					type: "pmmo:xpreward"
+					title: "Level 15 Endurance"
+					auto: "disabled"
+					skill: "endurance"
+					amount: 2393.0d
+					ignoreBonuses: true
+				}
+				{
+					id: "1DAEC6762DD48417"
+					type: "pmmo:xpreward"
+					title: "Level 15 Gathering"
+					auto: "disabled"
+					skill: "gathering"
+					amount: 2393.0d
+					ignoreBonuses: true
+				}
+				{
+					id: "632B23245C44939E"
+					type: "pmmo:xpreward"
+					title: "Level 3 Agility"
+					auto: "disabled"
+					skill: "agility"
+					amount: 175.0d
+					ignoreBonuses: true
+				}
+				{
+					id: "32C7CA5F262D7736"
+					type: "pmmo:xpreward"
+					title: "Level 8 Archery"
+					auto: "disabled"
+					skill: "archery"
+					amount: 798.0d
+					ignoreBonuses: true
+				}
+				{
+					id: "12FE6DE37AB9BE03"
+					type: "pmmo:xpreward"
+					title: "Level 5 Magic"
+					auto: "disabled"
+					skill: "magic"
+					amount: 388.0d
+					ignoreBonuses: true
+				}
+				{
+					id: "6746AF49B352E648"
+					type: "item"
+					auto: "disabled"
+					item: {
+						id: "enigmaticlegacy:iron_ring"
+						Count: 1b
+						tag: {
+							itemModifier: "modifiers:rough"
+						}
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "4DE7A604DA877394"
+					type: "item"
+					auto: "disabled"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							CustomPotionEffects: [{
+								Duration: 12000
+								Id: 95b
+							}]
+							Potion: "minecraft:mundane"
+							display: {
+								Name: "[{\"translate\":\"item.minecraft.potion\",\"italic\":false},{\"text\":\" of \"},{\"translate\":\"effect.majruszs_difficulty.bleeding_immunity\"}]"
+							}
+						}
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "4F3C942CE4E1AD39"
+					type: "item"
+					item: {
+						id: "curios:knuckles"
+						Count: 1b
+						tag: {
+							display: {
+								Lore: ["{\"text\":\"These fists arrive to save those who are in grave danger.\",\"color\":\"light_purple\"}"]
+								Name: "{\"text\":\"RAD2 & Knuckles\",\"color\":\"gold\",\"italic\":false}"
+							}
+							itemModifier: "modifiers:angelic"
+						}
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Salvaging?"
+			icon: "minecraft:smithing_table"
+			x: -3.0d
+			y: 2.5d
+			subtitle: "Let me break it down for you"
+			description: [
+				"Salvaging can refund a small amount of materials used to craft certain items."
+				""
+				"To salvage an item interact with the smithing table while sneaking."
+				""
+				"Certain items will require a specific level of Smithing to salvage."
+				""
+				"At Smithing level 50 you unlock Dual Salvaging which allows you to salvage items from both hands at the same time."
+			]
+			dependencies: ["41F4A32BEA5C4295"]
+			dependency_requirement: "one_started"
+			id: "17C2CFAA419DAA42"
+			tasks: [{
+				id: "6161B1DF42B0DED6"
+				type: "observation"
+				title: "Salvaging?"
+				icon: {
+					id: "minecraft:smithing_table"
+					Count: 1b
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+				}
+				timer: 100L
+				observe_type: 0
+				to_observe: "minecraft:smithing_table"
+			}]
+			rewards: [
+				{
+					id: "54B7E10B084F7F89"
+					type: "item"
+					item: {
+						id: "minecraft:ladder"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "306AB7B8566E39A5"
+					type: "item"
+					item: {
+						id: "minecraft:book"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "36A4BB978DC355E0"
+					type: "item"
+					item: {
+						id: "minecraft:redstone_torch"
+						Count: 1b
+						ForgeCaps: {
+							"dungeons_libraries:built_in_enchantments": {
+								BuiltInEnchantments: [ ]
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Dungeon Treasures"
+			x: -4.0d
+			y: -2.0d
+			subtitle: "Loot for everyone!"
+			description: [
+				"&6Chests in natural structures can be looted by multiple players and help indicate which structures you have already looted."
+				""
+				""
+				""
+				"&a<More in depth details below>"
+				""
+				""
+				""
+				"Chests found in various structures will look rather different compared to the standard wooden chests you are used to seeing."
+				""
+				"These bejeweled chests are Lootr chests, which provide individual loot for every player that comes across it."
+				""
+				"Any items you put in the chest also cannot be seen by other players."
+				""
+				"If you have already opened a lootr chest it will appear a bluish-grey color instead."
+				""
+				"When destroyed they will NOT drop the loot inside so make sure to open it and watch out for explosive traps in certain structures."
+				""
+				"They can also come in the form of barrels and shulker boxes in some structures."
+				""
+				"&eThese are Observation quests. Find the block out in the world to complete this quest."
+			]
+			dependencies: ["143E7EB383FC8A60"]
+			id: "2B14E71EF06F5938"
+			tasks: [{
+				id: "74E46D8664297FE3"
+				type: "observation"
+				title: "Discover a Lootr Chest"
+				icon: {
+					id: "lootr:lootr_chest"
+					Count: 1b
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+				}
+				timer: 50L
+				observe_type: 0
+				to_observe: "lootr:lootr_chest"
+			}]
+		}
+		{
+			title: "Veinmining?"
+			icon: "kubejs:mine"
+			x: -6.0d
+			y: -2.0d
+			subtitle: "Ore Excavation"
+			description: [
+				"&6By holding down the ` key you can mine multiple ores or logs in one go."
+				""
+				""
+				""
+				"&a<More in depth details below>"
+				""
+				""
+				""
+				"Ore excavation only works when you are holding something in your hand, like an axe."
+			]
+			dependencies: ["7FF57EE6F8F6FC1C"]
+			id: "143E7EB383FC8A60"
+			tasks: [{
+				id: "7A601096BEF88C06"
+				type: "item"
+				title: "Any #minecraft:logs"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				count: 5L
+			}]
+			rewards: [{
+				id: "65B246D328EEEA52"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "apotheosis:strong_haste"
+					}
+				}
+			}]
+		}
+		{
+			title: "Modifiers"
+			x: -3.0d
+			y: 0.0d
+			description: [
+				"Modifiers are additional random attributes given to any tool, armor, shield, or curio."
+				""
+				"They can be beneficial or harmful to the player."
+				""
+				"While they usually grant basic effects like extra health, damage, or defense, they can sometimes have extra new attributes. Most are self-explanatory, but a few may not be clear on what they do:"
+				""
+				"-Smite: Bonus damage vs undead"
+				"-Blessed: Undead attacking you take this much damage"
+				"-Serendipity: Extra looting, fortune and luck"
+				"-Life Steal: Heal based on killed mob's hp percentage"
+				"-Soul Gathering/Soul Cap: Gain souls on defeating mobs (see Souls quest after this one)"
+				"-Summon Cap: Can summon more mobs using artifacts from the dungeons gear mod"
+			]
+			dependencies: ["0E5AE2A43020AFC3"]
+			hide: false
+			id: "4C74D405A58FCD5B"
+			tasks: [{
+				id: "6679EE100F918A88"
+				type: "checkmark"
+				title: "Modifiers"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			description: [
+				"After aquiring certain magical artifacts from the Dungeons Gear mod you may notice a blue bar appearing on the bottom left side of your screen."
+				""
+				"Killing a mob will grant you souls equal to your total Soul Gathering Attribute, up to your current Soul Cap. By default you can have up to 300 souls."
+				""
+				"This attribute can be found on modifiers as well as soul-related weapons and armor."
+				""
+				"Souls can be spent by using certain dungeons artifacts. Check the Trinkets n' Curios quest chapter to see which artifacts use souls and their cost."
+				""
+				"Certain enchantments can also benefit more by having a high soul bar, like Enigma Resonator."
+			]
+			dependencies: ["4C74D405A58FCD5B"]
+			id: "2E5549A74BA848D1"
+			tasks: [{
+				id: "58DFC370CBEDC229"
+				type: "checkmark"
+				title: "Souls"
+				icon: {
+					id: "quark:soul_bead"
+					Count: 1b
+					ForgeCaps: {
+						"dungeons_libraries:built_in_enchantments": {
+							BuiltInEnchantments: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			icon: "rats:trash_can"
+			x: -4.5d
+			y: -3.5d
+			description: [
+				"The trash can slot found on the bottom right of your inventory and certain other interfaces can be used to delete unwanted items."
+				""
+				"When an item is in this slot, it will not be deleted until another item is placed onto it, reducing the chance of accidentally deleting an item."
+				""
+				"You can click and drag to move the slot anywhere you want, and it can be toggled on and off with a keybind, &3default T&r."
+			]
+			dependencies: ["7B1C0892C86A4177"]
+			id: "4B28C11BE60618B8"
+			tasks: [{
+				id: "7850FB9347991619"
+				type: "checkmark"
+				title: "Trash Can Slot"
+			}]
+		}
+	]
+}

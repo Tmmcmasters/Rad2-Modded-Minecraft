@@ -1,0 +1,40 @@
+{
+  "display": {
+    "icon": {
+      "item": "iceandfire:dread_queen_sword",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "text": "Dreaded Champion",
+      "color": "dark_purple"
+    },
+    "description": {
+      "text": "Defeat the Large Dread Gate and claim the dread queen sword (This advancement awards a special title!)"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "iceandfire:iceandfire/dragonsteel",
+  "criteria": {
+    "dreadsteel_armor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "iceandfire:dread_queen_sword"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "dreadsteel_armor"
+    ]
+  ],
+  "rewards": {
+    "experience": 666
+  }
+}
