@@ -5,7 +5,7 @@ FROM itzg/minecraft-server
 ENV TYPE=FORGE
 ENV VERSION=1.16.5
 ENV FORGE_VERSION=36.2.39
-ENV MEMORY=16G
+ENV MEMORY=10G
 ENV EULA=TRUE
 ENV ENABLE_WHITELIST=TRUE
 ENV ENFORCE_SECURE_PROFILE=FALSE
@@ -22,6 +22,6 @@ RUN echo '#!/bin/sh' > /entrypoint.sh && \
 
 ENTRYPOINT ["/entrypoint.sh"]
 
-# Expose the Minecraft server port and VoiceChat port
+# Expose the Minecraft server port and VoiceChat port (optional)
 EXPOSE 25565
 EXPOSE 24454
