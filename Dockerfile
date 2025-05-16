@@ -14,6 +14,8 @@ ENV MEMORY=16G
 WORKDIR /data
 
 # Use the correct path for the script
+RUN chmod +x /data/LaunchServer.sh
+
 ENTRYPOINT ["/data/LaunchServer.sh"]
 
 EXPOSE 25565
