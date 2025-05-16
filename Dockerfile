@@ -7,6 +7,9 @@ WORKDIR /data
 # Copy all server files into the container
 COPY . .
 
+# Debug: List files to confirm launchserver.sh is present
+RUN ls -la
+
 # Ensure launchserver.sh is executable
 RUN chmod +x launchserver.sh
 
