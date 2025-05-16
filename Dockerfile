@@ -2,27 +2,22 @@
 FROM itzg/minecraft-server:java8
 
 # Set environment variables for the Minecraft server
-ENV TYPE=CURSEFORGE
-ENV VERSION=1.16.5
-ENV FORGE_VERSION=36.2.39
-ENV MEMORY=12G
+ENV TYPE=AUTO_CURSEFORGE
+ENV CF_PAGE_URL=https://www.curseforge.com/minecraft/modpacks/roguelike-adventures-and-dungeons-2
+ENV MEMORY=16G
 ENV EULA=TRUE
 ENV ENABLE_WHITELIST=FALSE
 ENV ENFORCE_SECURE_PROFILE=FALSE
 ENV PORT=25565
 ENV JVM_OPTS="-XX:+PrintGCDetails -XX:+PrintGCDateStamps -Xloggc:/data/gc.log"
 
-# Copy custom files to a temporary directory
-COPY . /tmp/data
+# Use an entrypoint script to ensure /data permissions are correct
+# RUN echo '#!/bin/sh' > /entrypoint.sh && \
+#     echo 'chown -R 1000:1000 /data' >> /entrypoint.sh && \
+#     echo 'exec /start' >> /entrypoint.sh && \
+#     chmod +x /entrypoint.sh
 
-# Use an entrypoint script to copy files into /data if it's empty
-RUN echo '#!/bin/sh' > /entrypoint.sh && \
-    echo 'if [ -z "$(ls -A /data)" ]; then cp -r /tmp/data/* /data; fi' >> /entrypoint.sh && \
-    echo 'chown -R 1000:1000 /data' >> /entrypoint.sh && \
-    echo 'exec /start' >> /entrypoint.sh && \
-    chmod +x /entrypoint.sh
-
-ENTRYPOINT ["/entrypoint.sh"]
+# ENTRYPOINT ["/entrypoint.sh"]
 
 # Expose the Minecraft server port and VoiceChat port (optional)
 EXPOSE 25565
