@@ -11,4 +11,4 @@ ENV ENABLE_WHITELIST=TRUE
 ENV MEMORY=8G
 
 # Ensure the data directory is used for persistence
-VOLUME /data
+# VOLUME /data
