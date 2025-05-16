@@ -1,4 +1,4 @@
-FROM itzg/minecraft-server:java8
+FROM itzg/minecraft-server
 
 # Copy all server files into the container's data directory
 COPY . /data
