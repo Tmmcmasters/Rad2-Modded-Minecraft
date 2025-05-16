@@ -1,5 +1,5 @@
-# Use the itzg/minecraft-server image as the base
-FROM itzg/minecraft-server
+# Use the itzg/minecraft-server image with Java 8
+FROM itzg/minecraft-server:java8
 
 # Set environment variables for the Minecraft server
 ENV TYPE=FORGE
