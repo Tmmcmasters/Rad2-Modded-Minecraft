@@ -15,7 +15,13 @@ RUN ls -la /tmp/data
 
 # Create an entrypoint script to initialize the volume
 RUN echo '#!/bin/sh' > /entrypoint.sh && \
-    echo 'if [ -z "$(ls -A /data)" ] || [ "$(ls -A /data)" = "lost+found" ]; then cp -r /tmp/data/* /data; fi' >> /entrypoint.sh && \
+    echo '# Copy static files only if they do not exist' >> /entrypoint.sh && \
+    echo 'for file in /tmp/data/*; do' >> /entrypoint.sh && \
+    echo '    filename=$(basename "$file")' >> /entrypoint.sh && \
+    echo '    if [ ! -e "/data/$filename" ] && [ "$filename" != "world" ] && [ "$filename" != "logs" ]; then' >> /entrypoint.sh && \
+    echo '        cp -r "$file" /data/' >> /entrypoint.sh && \
+    echo '    fi' >> /entrypoint.sh && \
+    echo 'done' >> /entrypoint.sh && \
     echo 'ls -la /data' >> /entrypoint.sh && \
     echo 'exec /data/LaunchServer.sh' >> /entrypoint.sh && \
     chmod +x /entrypoint.sh
