@@ -3,6 +3,12 @@
     "uuid": "f675a0b7-f8bf-4c3f-b52a-baeaac64dbe5",
     "name": "OwlzSlick",
     "level": 4,
-    "bypassesPlayerLimit": false
+    "bypassesPlayerLimit": true
+  },
+  {
+    "uuid": "b84fdba7-f616-4496-8ace-878af7657569",
+    "name": "C3Crazy5",
+    "level": 4,
+    "bypassesPlayerLimit": true
   }
 ]
