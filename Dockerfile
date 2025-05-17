@@ -22,8 +22,9 @@ RUN echo '#!/bin/sh' > /entrypoint.sh && \
     echo 'if [ ! -f "/data/eula.txt" ]; then cp /tmp/data/eula.txt /data/; fi' >> /entrypoint.sh && \
     echo 'if [ ! -d "/data/mods" ]; then cp -r /tmp/data/mods /data/; fi' >> /entrypoint.sh && \
     echo 'if [ ! -d "/data/config" ]; then cp -r /tmp/data/config /data/; fi' >> /entrypoint.sh && \
-    echo '# Run the Forge installer to download required libraries if libraries are missing' >> /entrypoint.sh && \
-    echo 'if [ ! -d "/data/libraries" ]; then java -jar /data/forge-1.16.5-36.2.39.jar --installServer; fi' >> /entrypoint.sh && \
+    echo '# Run the Forge installer to download required libraries' >> /entrypoint.sh && \
+    echo 'echo "Running Forge installer..."' >> /entrypoint.sh && \
+    echo 'java -jar /data/forge-1.16.5-36.2.39.jar --installServer || { echo "Forge installer failed"; exit 1; }' >> /entrypoint.sh && \
     echo '# Debug: List files in /data' >> /entrypoint.sh && \
     echo 'ls -la /data' >> /entrypoint.sh && \
     echo '# Debug: List contents of world directory if it exists' >> /entrypoint.sh && \
